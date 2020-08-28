@@ -7,12 +7,133 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textTitle"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="47dp"
+        android:text="Pop the 'rona"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout3"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Time Left: 0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Score: 0"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="390dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:onClick="score"
+                app:srcCompat="@drawable/rona" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:onClick="score"
+                app:srcCompat="@drawable/rona" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:onClick="score"
+                app:srcCompat="@drawable/rona" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:onClick="score"
+                app:srcCompat="@drawable/rona" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:onClick="score"
+                app:srcCompat="@drawable/rona" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:onClick="score"
+                app:srcCompat="@drawable/rona" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:onClick="score"
+                app:srcCompat="@drawable/rona" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:onClick="score"
+                app:srcCompat="@drawable/rona" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:onClick="score"
+                app:srcCompat="@drawable/rona" />
+        </TableRow>
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
